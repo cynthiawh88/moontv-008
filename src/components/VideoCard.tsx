@@ -65,6 +65,7 @@ export default function VideoCard({
     if (!isAggregate || !items) return null;
     const countMap = new Map<string | number, number>();
     const episodeCountMap = new Map<number, number>();
+    console.log('Aggregating data from items:', items);
     items.forEach((item) => {
       if (item.douban_id && item.douban_id !== 0) {
         countMap.set(item.douban_id, (countMap.get(item.douban_id) || 0) + 1);
