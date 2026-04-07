@@ -277,7 +277,6 @@ export default function VideoCard({
         {/* 骨架屏 */}
         {!isLoading && <ImagePlaceholder aspectRatio='aspect-[2/3]' />}
         {/* 图片223 */}
-        <div>{processImageUrl(actualPoster)}</div>
         <Image
           src={'/api/image-proxy?url=' + processImageUrl(actualPoster)}
           alt={actualTitle}
