@@ -276,7 +276,7 @@ export default function VideoCard({
       <div className='relative aspect-[2/3] overflow-hidden rounded-lg'>
         {/* 骨架屏 */}
         {!isLoading && <ImagePlaceholder aspectRatio='aspect-[2/3]' />}
-        {/* 图片 */}
+        {/* 图片11 */}
         <Image
           src={'/api/image-proxy?url=' + processImageUrl(actualPoster)}
           alt={actualTitle}
